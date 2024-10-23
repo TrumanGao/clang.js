@@ -28,8 +28,9 @@ export default {
     }),
     process.env.ENV === 'development' &&
       serve({
-        contentBase: './',
+        contentBase: './example',
         port: 4321,
+        open: true,
       }),
   ],
 };
